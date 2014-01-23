@@ -108,7 +108,12 @@ var locationsGJ = L.geoJson(locations, {
 });
 
 locationsGJ.addTo(map);
-map.fitBounds(locationsGJ.getBounds());
+
+var tilejson = map.getTileJSON();
+
+console.log(tilejson);
+
+// map.fitBounds(locationsGJ.getBounds());
 
 // define callback function for getJSON
 

@@ -109,4 +109,4 @@ var locationsGJ = L.geoJson(locations, {
 
 locationsGJ.addTo(map);
 locationsBounds = locationsGJ.getBounds();
-map.fitBounds(locationsBounds);
+map.fitBounds(locationsBounds, { reset: true });

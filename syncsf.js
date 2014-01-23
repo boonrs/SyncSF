@@ -1,5 +1,5 @@
 // initialize map
-var map = L.mapbox.map('sf-map', 'lyzidiamond.h2jco8hl').setView([37.770986,-122.446457], 15);
+var map = L.mapbox.map('sf-map', 'lyzidiamond.h2jco8hl');
 
 function onEachFeature(feature, layer) {
   var popupContent = "<strong>There is a street closure here!</strong>";
@@ -108,5 +108,4 @@ var locationsGJ = L.geoJson(locations, {
 });
 
 locationsGJ.addTo(map);
-locationsBounds = locationsGJ.getBounds();
-map.fitBounds(locationsBounds, { reset: true });
+map.fitBounds(locationsBounds);

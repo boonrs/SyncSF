@@ -1,5 +1,5 @@
 // initialize map
-var map = L.mapbox.map('sf-map', 'lyzidiamond.h2jco8hl').setView([37.770986,-122.446457], 12);
+var map = L.mapbox.map('sf-map', 'lyzidiamond.ggi4654c').setView([37.770986,-122.446457], 12);
 
 function onEachFeature(feature, layer) {
   var popupContent = "<strong>There is a street closure here!</strong>";

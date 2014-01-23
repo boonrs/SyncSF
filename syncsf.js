@@ -1,5 +1,5 @@
 // initialize map
-var map = L.mapbox.map('sf-map', 'lyzidiamond.h2jco8hl').setView([37.770986,-122.446457], 12);
+var map = L.mapbox.map('sf-map', 'lyzidiamond.h2jco8hl').setView([37.770986,-122.446457], 15);
 
 function onEachFeature(feature, layer) {
   var popupContent = "<strong>There is a street closure here!</strong>";
@@ -108,7 +108,7 @@ var locationsGJ = L.geoJson(locations, {
 });
 
 locationsGJ.addTo(map);
-map.fitBounds(locationsGJ.getBounds());
+console.log(locationsGJ.getBounds());
 
 // define callback function for getJSON
 

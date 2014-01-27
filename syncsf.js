@@ -1,5 +1,5 @@
 // initialize map
-var map = L.mapbox.map('sf-map', 'lyzidiamond.h2jco8hl').setView([37.770986,-122.446457], 13);
+var map = L.mapbox.map('sf-map', 'codeforamerica.h3e10nip').setView([37.770986,-122.446457], 13);
 
 function onEachFeature(feature, layer) {
   var popupContent = "<strong>There is a street closure here!</strong>";
